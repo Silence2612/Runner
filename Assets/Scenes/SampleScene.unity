@@ -408,7 +408,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chunkPrefab: {fileID: 2176447244771921884, guid: 50d76be137d426e45a12e38bf2bbc708, type: 3}
   StartingChunksAmount: 12
-  ChunkParent: {fileID: 1207665947}
+  chunkParent: {fileID: 1207665947}
+  moveSpeed: 8
 --- !u!4 &480974422
 Transform:
   m_ObjectHideFlags: 0
@@ -572,7 +573,7 @@ Transform:
   m_GameObject: {fileID: 1207665946}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.00847, y: -3.5470874, z: -18.64433}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
