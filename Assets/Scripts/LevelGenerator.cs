@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
@@ -8,7 +9,8 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] float moveSpeed = 8f;
 
     float chunklength = 10;
-    GameObject[] chunks = new GameObject[12];
+    //GameObject[] chunks = new GameObject[12];
+    List<GameObject> chunks = new List<GameObject>();
 
     void Start()
     {
@@ -23,7 +25,7 @@ public class LevelGenerator : MonoBehaviour
 
             Vector3 chunkSpawnPos = new Vector3(transform.position.x, transform.position.y, spawnPositionZ);
             GameObject newChunk = Instantiate(chunkPrefab, chunkSpawnPos, Quaternion.identity, chunkParent);
-            chunks[i] = newChunk;
+            chunks.Add(newChunk);
         }
     }
 
@@ -50,9 +52,15 @@ public class LevelGenerator : MonoBehaviour
 
     void MoveChunks()
     {
-        for (int i = 0; i < StartingChunksAmount; i++)
+        for (int i = 0; i < chunks.Count; i++)
         {
-            chunks[i].transform.Translate(-transform.forward*(moveSpeed*Time.deltaTime));
+            GameObject chunk = chunks[i];
+            chunk.transform.Translate(-transform.forward*(moveSpeed*Time.deltaTime));
+            if(chunk.transform.position.z<Camera.main.transform.position.z - chunklength)
+            {
+                Destroy(chunk);
+                chunks.Remove(chunk);
+            }
         }
     }
 }
