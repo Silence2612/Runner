@@ -206,7 +206,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.1408567, y: -0, z: -0, w: 0.99003005}
-  m_LocalPosition: {x: 0, y: 3.47, z: -4.59}
+  m_LocalPosition: {x: 0.4, y: 3.47, z: -4.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -407,7 +407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chunkPrefab: {fileID: 2176447244771921884, guid: 50d76be137d426e45a12e38bf2bbc708, type: 3}
-  StartingChunksAmount: 12
+  StartingChunksAmount: 8
   chunkParent: {fileID: 1207665947}
   moveSpeed: 8
 --- !u!4 &480974422
@@ -419,7 +419,7 @@ Transform:
   m_GameObject: {fileID: 480974420}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -529,7 +529,7 @@ MonoBehaviour:
   - {fileID: 7673364366714010517, guid: 7937baef08b29fc4498be6a60144e235, type: 3}
   - {fileID: 5775606310431148954, guid: 8220551a2f3b089449b72998ff323202, type: 3}
   - {fileID: 6262240572325967706, guid: 4a64cb241a2b476449f2f8bceb8e79b0, type: 3}
-  obstacleSpawnTime: 1.5
+  obstacleSpawnTime: 3
   obstacleParent: {fileID: 1207665947}
   spawnWidth: 4
 --- !u!4 &830886732
@@ -541,7 +541,7 @@ Transform:
   m_GameObject: {fileID: 830886730}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 37.22}
+  m_LocalPosition: {x: 0, y: 1.41, z: 45.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -660,7 +660,7 @@ Transform:
   m_GameObject: {fileID: 1275995457}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.037, z: 0.001}
+  m_LocalPosition: {x: 0.25, y: 1.037, z: 0.001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
