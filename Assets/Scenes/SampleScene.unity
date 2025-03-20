@@ -523,8 +523,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3be0b5dbbab5f1b4eb97f84c585a906a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 971264170672551733, guid: d05fbf00613cf634ab4e9540c4525d84, type: 3}
-  obstacleSpawnTime: 1
+  obstaclePrefabs:
+  - {fileID: 2740970780497376325, guid: 13452766bd414204480b880234b3f727, type: 3}
+  - {fileID: 4348567930000260383, guid: 56d342900b7a6d8429ef677e30d8e4b0, type: 3}
+  - {fileID: 7673364366714010517, guid: 7937baef08b29fc4498be6a60144e235, type: 3}
+  - {fileID: 5775606310431148954, guid: 8220551a2f3b089449b72998ff323202, type: 3}
+  - {fileID: 6262240572325967706, guid: 4a64cb241a2b476449f2f8bceb8e79b0, type: 3}
+  obstacleSpawnTime: 1.5
+  obstacleParent: {fileID: 1207665947}
+  spawnWidth: 4
 --- !u!4 &830886732
 Transform:
   m_ObjectHideFlags: 0
@@ -534,7 +541,7 @@ Transform:
   m_GameObject: {fileID: 830886730}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.72, z: 48.1}
+  m_LocalPosition: {x: 0, y: 1, z: 37.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
