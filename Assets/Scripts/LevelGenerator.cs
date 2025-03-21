@@ -28,7 +28,6 @@ public class LevelGenerator : MonoBehaviour
     private void SpawnChunk()
     {
         float spawnPositionZ = CalculateSpawnPositionZ();
-
         Vector3 chunkSpawnPos = new Vector3(transform.position.x, transform.position.y, spawnPositionZ);
         GameObject newChunk = Instantiate(chunkPrefab, chunkSpawnPos, Quaternion.identity, chunkParent);
 
