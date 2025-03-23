@@ -4,9 +4,9 @@ using UnityEngine;
 public class ObstacleSpawner : MonoBehaviour
 {
     [SerializeField] GameObject[] obstaclePrefabs;
-    [SerializeField] float obstacleSpawnTime = 1f;
+    [SerializeField] float obstacleSpawnTime = 1.0f;
     [SerializeField] Transform obstacleParent;
-    [SerializeField] float spawnWidth = 4f;
+    [SerializeField] float spawnWidth = 4.0f;
 
     void Start()
     {
