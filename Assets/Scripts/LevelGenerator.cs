@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//wrapped up for now will continue later
 public class LevelGenerator : MonoBehaviour
 {
     [SerializeField] GameObject chunkPrefab;
